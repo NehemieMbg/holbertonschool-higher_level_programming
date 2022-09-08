@@ -6,7 +6,7 @@ from sys import argv
 def print_argument():
     print('{} argument'.format(len(argv) - 1), end='')
     if len(argv) == 1:
-        print('.', end='')
+        print('s.', end='')
     elif len(argv) == 2:
         print(':', end='')
     elif len(argv) > 2:
