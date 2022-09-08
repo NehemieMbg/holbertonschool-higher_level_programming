@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""imports functions from the file calculator_1"""
+"""imports functions from the file"""
 
 
 if __name__ == "__main__":
