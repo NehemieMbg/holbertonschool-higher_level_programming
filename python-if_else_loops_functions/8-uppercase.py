@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 # converts a string in uppercase followed by a new line
+
+
 def uppercase(str):
     for character in str:
         if ord('a') <= ord(character) <= ord('z'):
