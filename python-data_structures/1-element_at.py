@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-#function that retrieves an element from a list
+# Function that retrieves an element from a list
+
 
 def element_at(my_list, idx):
     if idx >= 0 and idx < len(my_list):
