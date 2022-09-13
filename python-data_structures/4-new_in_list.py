@@ -8,4 +8,4 @@ def new_in_list(my_list, idx, element):
 
     newList = my_list
     newList[idx] = element
-    return my_list
+    return newList
