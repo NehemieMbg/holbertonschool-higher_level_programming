@@ -7,5 +7,6 @@ def divisible_by_2(my_list=[]):
     for num in range(len(my_list)):
         if my_list[num] % 2 == 0:
             newList[num] = True
-        newList[num] = False
+        else:
+            newList[num] = False
     return newList
