@@ -4,6 +4,6 @@ of a string and its first character."""
 
 
 def multiple_returns(sentence):
-    if not sentence:
-        first = None
-    return len(sentence), sentence[0]
+    if sentence:
+        return len(sentence), sentence[0]
+    return len(sentence), None
