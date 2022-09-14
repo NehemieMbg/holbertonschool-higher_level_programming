@@ -4,5 +4,7 @@
 
 def max_integer(my_list=[]):
     if my_list:
-        return max(my_list)
+        my_list.sort()
+        number = len(my_list) - 1
+        return my_list[number]
     return None
