@@ -3,7 +3,4 @@
 
 
 def multiply_by_2(a_dictionary):
-    newDic = a_dictionary
-    for key in newDic:
-        newDic[key] = newDic[key] * 2
-    return newDic
+    return {key: a_dictionary[key] * 2 for key in a_dictionary}
