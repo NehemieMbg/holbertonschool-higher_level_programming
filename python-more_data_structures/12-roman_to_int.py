@@ -12,6 +12,9 @@ def roman_to_int(roman_string):
         "M": 1000
     }
 
+    if not roman_string or None:
+        return 0
+
     num = len(roman_string)
     i = num - 1
     output = 0
