@@ -17,9 +17,11 @@ def list_division(my_list_1, my_list_2, list_length):
         # Handling erros if devided by zero
         except ZeroDivisionError:
             print("division by 0")
+            result = 0
         # Handling erros if out of range
         except IndexError:
             print("out of range")
+            result = 0
         # Pushes the result to the newList
         finally:
             newList.append(result)
