@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 # Defines a square based on 3-square.py
 
+
 """ New blueprint Square"""
-
-
 class Square:
     def __init__(self, size=0):
         self.__size = size
