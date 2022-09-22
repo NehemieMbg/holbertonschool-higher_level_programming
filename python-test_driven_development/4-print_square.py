@@ -18,6 +18,8 @@ def print_square(size):
     # Check if size is not a float
     if type(size) is float and size < 0:
         raise TypeError("size must be an integer")
+    if size == 0:
+        print("", end="")
     # Prints the square with the character #
     else:
         print("\n".join("#"*size for rows in range(size)))
