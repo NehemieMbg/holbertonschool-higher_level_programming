@@ -1,0 +1,12 @@
+Testing file for ../3-say_my_name.py
+------------------------------------
+Using ``3-say_my_name`` 
+=======================
+First import the function
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Successful expected Tests:
+	>>> say_my_name("Nehemie", "Mombanga")
+	My name is Nehemie Mombanga
+
+Failure expected Tests:
