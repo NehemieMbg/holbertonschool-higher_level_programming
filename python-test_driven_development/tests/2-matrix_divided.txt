@@ -66,3 +66,11 @@ Error expected Tests:
     Traceback (most recent call last):
     ...
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
+
+    # Case if matrix not a list of lists of integers divided by an integer
+    >>> matrix = [12, 34, 45]
+    >>> matrix_divided(matrix, 5)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix must be a matrix (list of lists) of integers/floats
+
