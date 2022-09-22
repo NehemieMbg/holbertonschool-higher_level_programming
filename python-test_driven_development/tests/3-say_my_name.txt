@@ -6,7 +6,25 @@ First import the function
     >>> say_my_name = __import__('3-say_my_name').say_my_name
 
 Successful expected Tests:
-	>>> say_my_name("Nehemie", "Mombanga")
-	My name is Nehemie Mombanga
+    # Check case if the first and last name are strings
+    >>> say_my_name("Nehemie", "Mombanga")
+    My name is Nehemie Mombanga
 
 Failure expected Tests:
+    # Check case if the first name is a string and last name is not
+    >>> say_my_name("Andrew", 777)
+    Traceback (most recent call last):
+    ...
+    TypeError: last_name must be a string
+
+    # Check case if the firstname is not a string and lastname is a string
+    say_my_name(1900, "Harry")
+    Traceback (most recent call last):
+    ...
+    TypeError: first_name must be a string
+
+    # Check case if the fist and last name are missing
+    >>> say_my_name()
+T	raceback (most recent call last):
+    ...
+    TypeError: say_my_name() missing 1 required positional argument: 'first_name'
