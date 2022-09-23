@@ -10,11 +10,13 @@ def text_indentation(text):
     Defines a function.
     Takes a string as an argument
     """
-    # Check if text is a string
+    # Check if the text is a string
     if not isinstance(text, str):
         raise TypeError("text must be a string")
     # Prints 2 new lines after a punctuation
     for char in text:
+        if char == " ":
+            continue   
         if char == "." or char == "?" or char == ":":
             print(f"{char}\n")
         else:
