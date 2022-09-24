@@ -1,0 +1,36 @@
+Testing file for ../5-text_indentation.py
+------------------------------------
+Using ``5-text_indentation`` 
+=======================
+First import the function
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Successful expected Tests:
+	
+Failuer expected Tests:
+	>>> 5-text_indentation("Hi i am an Holberton Student. What is your favorite color ? Enter your name:")
+	Hi i am an Holberton Student.
+
+	What is your favorite color ?
+
+	Enter your name:
+	...
+	TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+
+	# Case if missing one argument
+	>>> 5-text_indentation()
+	Traceback (most recent call last):
+	...
+	TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+	# Case if string with blank line
+	>>> 5-text_indentation(" ")
+	Traceback (most recent call last):
+	...
+	TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+
+	# Case if not a string
+	>>> 5-text_indentation(Salut)
+	Traceback (most recent call last):
+	...
+	NameError: name 'Salut' is not defined
