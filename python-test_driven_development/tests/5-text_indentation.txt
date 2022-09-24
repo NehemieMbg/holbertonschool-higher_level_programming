@@ -10,10 +10,11 @@ Successful expected Tests:
 Failuer expected Tests:
 	>>> 5-text_indentation("Hi i am an Holberton Student. What is your favorite color ? Enter your name:")
 	Hi i am an Holberton Student.
-
+	<BLANKLINE>
 	What is your favorite color ?
-
+	<BLANKLINE>
 	Enter your name:
+	<BLANKLINE>
 	...
 	TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
 
