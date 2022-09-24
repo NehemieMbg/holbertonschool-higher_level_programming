@@ -18,7 +18,7 @@ Failure expected Tests:
     TypeError: last_name must be a string
 
     # Check case if the firstname is not a string and lastname is a string
-    say_my_name(1900, "Harry")
+    say_my_name(Harry, "Potter")
     Traceback (most recent call last):
     ...
     TypeError: first_name must be a string
