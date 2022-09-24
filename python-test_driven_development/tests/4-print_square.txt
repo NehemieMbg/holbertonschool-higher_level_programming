@@ -7,10 +7,11 @@ First import the function
 
 Successful expected Tests:
 	# Regular case test
-	>>> print_square(3)
-	####################
-	####################
-	####################
+	>>> print_square(4)
+	####
+	####
+	####
+	####
 
 
 Failure expected Tests:
