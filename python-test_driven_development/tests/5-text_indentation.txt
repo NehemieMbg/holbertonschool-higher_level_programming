@@ -6,8 +6,6 @@ First import the function
 	>>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Successful expected Tests:
-	
-Failuer expected Tests:
 	>>> 5-text_indentation("Hi i am an Holberton Student. What is your favorite color ? Enter your name:")
 	Hi i am an Holberton Student.
 	<BLANKLINE>
@@ -15,9 +13,8 @@ Failuer expected Tests:
 	<BLANKLINE>
 	Enter your name:
 	<BLANKLINE>
-	...
-	TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
 
+Failuer expected Tests:
 	# Case if missing one argument
 	>>> 5-text_indentation()
 	Traceback (most recent call last):
