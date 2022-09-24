@@ -18,11 +18,10 @@ Failure expected Tests:
     TypeError: last_name must be a string
 
     # Check case if the firstname is not a string and lastname is a string
-    >>> say_my_name = __import__('3-say_my_name').say_my_name
-    >>> say_my_name(nemi, "hi")
+    >>> say_my_name(8, 5)
     Traceback (most recent call last):
     ...
-    NameError: name 'nemi' is not defined
+    TypeError: first_name must be a string
 
     # Check case if the fist and last name are missing
     >>> say_my_name()
