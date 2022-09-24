@@ -16,6 +16,7 @@ Successful expected Tests:
 
 Failure expected Tests:
 	# Case if size is not an integer
+	>>> print_square("hello")
 	Traceback (most recent call last):
 	...
 	TypeError: size must be an integer
