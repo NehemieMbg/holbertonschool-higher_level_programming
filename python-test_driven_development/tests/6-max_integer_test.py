@@ -25,8 +25,8 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([-100, -85, -69, -24]), -24)
     
     def test_listOfElement(self):
-        """Test for list of element"""
-        elem = [10, 24, 36, 74]
+        """Test for list of one element"""
+        elem = [74]
         self.assertEqual(max_integer(elem), 74)
 
     def test_emptyList(self):
