@@ -19,7 +19,6 @@ def text_indentation(text):
     newText = newText.replace(":", ":\n\n")
     # Splits line when it encounters "\n"
     parser = newText.splitlines(True)
-    print(parser)
     # Declaring a new list
     newList = []
     # If index is a new line a new line is push to the newList
