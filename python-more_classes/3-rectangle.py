@@ -32,7 +32,7 @@ class Rectangle:
         """Getter: Gets the height Value"""
         return self.__height
 
-    @width.setter
+    @height.setter
     def height(self, value):
         """Setter: Sets the height Value"""
         if not isinstance(value, int):
@@ -50,7 +50,7 @@ class Rectangle:
         """Returns the Rectangle perimeter"""
         if self.width == 0 or self.height == 0:
             return 0
-        return (self.width + self.height) * 2
+        return (self.height + self.width) *2
 
     def __str__(self):
         """Prints the rectangle with the character #"""
