@@ -68,7 +68,7 @@ class Square:
         # character times size
             """
         if self.__size == 0:
-            prints("")
+            print("")
         else:
             print("\n" * self.__position[1], end="")
             print("\n".join(" " * self.__position[0] +
