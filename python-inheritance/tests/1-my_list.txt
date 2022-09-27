@@ -46,6 +46,23 @@ First import the method:
 	>>> my_list.print_sorted()
 	[-5, -4, -3, -2, -1]
 
+	# check that print_sorted returns a new list
+	>>> list = MyList()
+	>>> list.append(7)
+	>>> list.print_sorted()
+	[7]
+	>>> id(list) is not id(list.print_sorted())
+	[7]
+	True
+
+	# check with an empty list
+	>>> MyList = __import__('1-my_list').MyList
+	>>> empty = MyList()
+	>>> print(empty)
+	[]
+	>>> empty.print_sorted()
+	[]
+
 ========== Failure cases ===================
 	# bad types provided
 	>>> my_list = MyList()
