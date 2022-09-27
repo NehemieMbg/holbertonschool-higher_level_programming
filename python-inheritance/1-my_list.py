@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-"""Module 1 - My list"""
+"""1.My list"""
 
 
 class MyList(list):
-    """Anthony"""
-
+    """
+    Class MyList
+    inherits list
+    """
     def print_sorted(self):
-        """print the 'list', but sorted
-        ascending sort we mean"""
+        """Function that print a sorted list"""
         print(sorted(self))
