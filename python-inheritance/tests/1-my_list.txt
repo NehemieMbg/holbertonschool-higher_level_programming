@@ -57,6 +57,7 @@ First import the method:
 
 	# check with an empty list
 	>>> MyList = __import__('1-my_list').MyList
+	>>> list = MyList()
 	>>> empty = MyList()
 	>>> print(empty)
 	[]
