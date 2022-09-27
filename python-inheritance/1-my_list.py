@@ -8,7 +8,5 @@ class MyList(list):
     inherits list
     """
     def print_sorted(self):
-        """
-        Function that print a sorted list
-        """
+        """Function that print a sorted list"""
         print(sorted(self))
