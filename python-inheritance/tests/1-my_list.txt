@@ -6,6 +6,7 @@ First import the method:
 >>> MyList = __import__('1-my_list').MyList
 
 ========== Success cases ==================
+# Anthony
 # list of integers
 >>> my_list = MyList()
 >>> my_list.append(1)
