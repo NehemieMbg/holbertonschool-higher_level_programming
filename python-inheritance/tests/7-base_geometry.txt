@@ -12,6 +12,7 @@ Import the method:
 	# Test with "age", True
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("age", True)
+	>>> 
 
 ========== Failure cases ==========
 	# Test with "age"
