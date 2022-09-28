@@ -1,9 +1,7 @@
-Text file for testing via doctest the Module 7-base_geometry
-===========================================================
-Using ``class BaseGeometry`` and function ``integer_validator``
-----------------------------------------------------------
-First import the method:
->>>BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Text file to be tested with doctest and Module 7 - Integer validator
+====================================================================
+Import the method:
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 ========== Success cases ==========
