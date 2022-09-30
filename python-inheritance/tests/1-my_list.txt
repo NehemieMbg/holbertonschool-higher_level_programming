@@ -64,6 +64,16 @@ First import the method:
 	>>> empty.print_sorted()
 	[]
 
+	# check that print_sorted returns a new list
+	>>> MyList = __import__('1-my_list').MyList
+	>>> list = MyList()
+	>>> list.append(243)
+	>>> list.print_sorted()
+	[243]
+	>>> id(list) is not id(list.print_sorted())
+	[243]
+	True
+
 ========== Failure cases ===================
 	# bad types provided
 	>>> my_list = MyList()
