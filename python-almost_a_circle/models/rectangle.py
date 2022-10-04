@@ -65,7 +65,7 @@ class Rectangle(Base):
         """Getter: gets y's value"""
         return self.__y
 
-    @x.setter
+    @y.setter
     def y(self, value):
         """Setter: sets y's value"""
         if not isinstance(value, int):
