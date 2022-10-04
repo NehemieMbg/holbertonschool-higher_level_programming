@@ -82,9 +82,13 @@ class Rectangle(Base):
     def display(self):
         """Displays the rectangle"""
         # Prints for the height
+        for index in range(self.__y):
+            print("")
         for i in range(self.__height):
             print("", end="")
             # Prints for the width
+            for jdex in range(self.__x):
+                print(" ", end="")
             for j in range(self.__width):
                 print("#", end="")
             print()
