@@ -8,12 +8,12 @@ class Rectangle(Base):
     """Initiate an object
     Rectangle inherits from Base"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        # Calls the super class with id
+        super().__init__(id)
         self.width = width
         self.height = height
         self.x = x
         self.y = y
-        # Calls the super class with id
-        super().__init__(id)
 
     @property
     def width(self):
@@ -97,3 +97,19 @@ class Rectangle(Base):
         """Represeents the class object as a string"""
         return f"[Rectangle] ({self.id}) " \
             f"{self.__x}/{self.__y} - " f"{self.__width}/{self.__height}"
+
+    def update(self, *args):
+        """Assings arguments to each attribute"""
+        if args:
+            # converts a data collection object into an enumerate object
+            for arg, ele in enumerate(args):
+                if arg == 0:
+                    self.id = ele
+                if arg == 1:
+                    self.__width = ele
+                if arg == 2:
+                    self.__height = ele
+                if arg == 3:
+                    self.__x = ele
+                if arg == 4:
+                    self.__y = ele
