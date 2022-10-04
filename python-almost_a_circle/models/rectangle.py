@@ -81,4 +81,8 @@ class Rectangle(Base):
 
     def display(self):
         """Displays the rectangle"""
-        print ("\n".join("#" * self.__y for i in range(self.__x)))
+        for i in range(0, self.__height):
+            print()
+            for j in range(0, self.__width):
+                print("#", end="")
+        print()
