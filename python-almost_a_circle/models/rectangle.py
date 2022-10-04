@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""2. First Rectangle"""
+"""Python - Almost a circle"""
 # Import Base from models/base
 from models.base import Base
 
@@ -81,8 +81,15 @@ class Rectangle(Base):
 
     def display(self):
         """Displays the rectangle"""
+        # Prints for the height
         for i in range(self.__height):
             print("", end="")
+            # Prints for the width
             for j in range(self.__width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """Represeents the class object as a string"""
+        return f"[Rectangle] ({self.id}) " \
+            f"{self.__x}/{self.__y} - " f"{self.__width}/{self.__height}"
