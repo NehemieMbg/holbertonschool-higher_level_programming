@@ -98,7 +98,7 @@ class Rectangle(Base):
         return f"[Rectangle] ({self.id}) " \
             f"{self.__x}/{self.__y} - " f"{self.__width}/{self.__height}"
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Assings arguments to each attribute"""
         if args:
             # converts a data collection object into an enumerate object
@@ -113,3 +113,16 @@ class Rectangle(Base):
                     self.__x = ele
                 if arg == 4:
                     self.__y = ele
+        else:
+            # Assigns a key/value argument to attributes
+            for key, value in kwargs.items():
+                if "id" == key:
+                    self.id = value
+                if "width" == key:
+                    self.__width = value
+                if "height" == key:
+                    self.__height = value
+                if "x" == key:
+                    self.__x = value
+                if "y" == key:
+                    self.__y = value
