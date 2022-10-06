@@ -38,7 +38,7 @@ class Base:
                 newList.append(cls.to_dictionary(i))
         with open(fileName, mode="w+") as f:
             f.write(cls.to_json_string(newList))
-        
+
     @staticmethod
     def from_json_string(json_string):
         """Returns the list of the JSON string representation"""
@@ -46,4 +46,3 @@ class Base:
             return json.loads(json_string)
         else:
             return []
-
