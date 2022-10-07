@@ -103,6 +103,16 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(r1.to_dictionary(), {
                          'id': 1, 'size': 10, 'x': 10, 'y': 0})
 
+    def test_update(self):
+        """test that update function works
+        and right args updated accordingly"""
+        r = Square(5, 2, 4, 6)
+        r_up = r.update(10, 4, 8, 12)
+        self.assertEqual(r.id, 10)
+        self.assertEqual(r.size, 4)
+        self.assertEqual(r.x, 8)
+        self.assertEqual(r.y, 12)
+
     if __name__ == "__main__":
         unittest.main()
 
