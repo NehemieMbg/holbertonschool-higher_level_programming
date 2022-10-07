@@ -63,13 +63,6 @@ class TestRectangle(unittest.TestCase):
         r = Rectangle(5, 6, 1, 2, 5)
         self.assertEqual(str(r), '[Rectangle] (5) 1/2 - 5/6')
 
-    @patch('sys.stdout', new_callable = StringIO)
-    def test_display(self, stdout):
-        """test if output is has expected"""
-        r = Rectangle(2, 6)
-        r.display()
-        self.assertEqual(stdout.getvalue(), (2 * '#' + '\n') * 6)
-
 
     def test_create(self):
         """test that create is OK""" 
@@ -77,7 +70,6 @@ class TestRectangle(unittest.TestCase):
                                       'height': 10, 'x': 3, 'y': 4})
         answer = Rectangle(5, 10, 3, 4, 10)
         self.assertEqual(str(rect_created), str(answer))
-
 
     def test_update(self):
         """test that update function works
@@ -95,9 +87,17 @@ class TestRectangle(unittest.TestCase):
         self.assertTrue(type(r1.to_dictionary()), dict)
         self.assertEqual(r1.to_dictionary(), {
                          'id': 1, 'width': 10, 'height': 10, 'x': 5, 'y': 0})
-
-
-
-
+    def test_display(self):
+        """test on output conformance"""
+        r = Rectangle(2, 6)
+        r1 = Rectangle(5, 7, 3, 1, 8)
+        with patch('sys.stdout', new=StringIO()) as fake_out:
+            r.display()
+            self.assertEqual(fake_out.getvalue(), (2 * '#' + '\n') * 6)
+        with patch('sys.stdout', new=StringIO()) as fake_out:
+            r1.display()
+            self.assertEqual(fake_out.getvalue(), ((1 * '\n') + \
+                (' ' * 3 + '#' * 5 + '\n') * 7))
+    
 if __name__ == "__main__":
     unittest.main()
