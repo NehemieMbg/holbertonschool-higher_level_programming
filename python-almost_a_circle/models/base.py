@@ -71,4 +71,3 @@ class Base:
             return lst
         except FileNotFoundError:
             return []
-
