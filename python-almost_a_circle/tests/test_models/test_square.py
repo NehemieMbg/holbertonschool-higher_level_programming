@@ -77,4 +77,8 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(ValueError):
             Square(5, 10, -8)
 
+    def test_x_wrongType(self):
+        with self.assertRaises(TypeError):
+            Square(5, "10", 8)
+
 
