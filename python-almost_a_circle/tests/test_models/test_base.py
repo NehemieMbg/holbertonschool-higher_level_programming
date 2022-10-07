@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/python3
 """unittests stuff to test the stuff
 I'm really understanding nothing at all
