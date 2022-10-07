@@ -26,6 +26,8 @@ class TestSquare(unittest.TestCase):
     def tearDown(self):
         pass
 
+    # Test the correct values
+
     def test_correct_values(self):
         r1 = Square(2, 4, 6)
         self.assertEqual(r1.size, 2)
@@ -56,3 +58,9 @@ class TestSquare(unittest.TestCase):
             Square(-1, -2, 3, None)
         with self.assertRaises(ValueError):
             Square(-1, "str", 3, None)
+
+    # Test for valueError
+
+    def test_negative_size(self):
+        with self.assertRaises(ValueError):
+            Square(-5, 10, 8)
