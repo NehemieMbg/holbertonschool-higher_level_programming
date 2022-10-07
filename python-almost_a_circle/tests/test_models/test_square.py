@@ -45,9 +45,5 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(r3.y, 0)
         self.assertEqual(r3.id, 2)
 
-    def test_wrong_values(slef):
-        r1 = Square(-2, 4, 6)
-        self.assertNotEqual(r1.size, 2)
-        self.assertNotEqual(r1.x, 4)
-        self.assertNotEqual(r1.y, 6)
-        self.assertNotEqual(r1.id, 1)
+        with self.assertRaises(ValueError):
+            r1 = Square(-2, -6, -4)
