@@ -45,5 +45,14 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(r3.y, 0)
         self.assertEqual(r3.id, 2)
 
+    def test_priority_width_height(self):
         with self.assertRaises(ValueError):
             r1 = Square(-2, -6, -4)
+        with self.assertRaises(TypeError):
+            Square("str", "str", 3, None)
+        with self.assertRaises(TypeError):
+            Square("str", -2, 3, None)
+        with self.assertRaises(ValueError):
+            Square(-1, -2, 3, None)
+        with self.assertRaises(ValueError):
+            Square(-1, "str", 3, None)
