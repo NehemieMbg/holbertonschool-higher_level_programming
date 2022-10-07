@@ -87,3 +87,11 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(TypeError):
             Square(5, 10, "8")
 
+    def test_str(self):
+        r1 = Square(10, 10, 0)
+        r2 = Square(10)
+        r3 = Square(10, 10, 10, 50)
+        self.assertEqual(r1.__str__(), "[Square] (1) 10/0 - 10")
+        self.assertEqual(r2.__str__(), "[Square] (2) 0/0 - 10")
+        self.assertEqual(r3.__str__(), "[Square] (50) 10/10 - 10")
+
