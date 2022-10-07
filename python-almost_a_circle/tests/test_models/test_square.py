@@ -95,3 +95,14 @@ class TestSquare(unittest.TestCase):
         self.assertEqual(r2.__str__(), "[Square] (2) 0/0 - 10")
         self.assertEqual(r3.__str__(), "[Square] (50) 10/10 - 10")
 
+    # Test toDictionary
+
+    def test_toDictionary(self):
+        r1 = Square(10, 10, 0)
+        self.assertTrue(type(r1.to_dictionary()), dict)
+        self.assertEqual(r1.to_dictionary(), {
+                         'id': 1, 'size': 10, 'x': 10, 'y': 0})
+
+    if __name__ == "__main__":
+        unittest.main()
+
