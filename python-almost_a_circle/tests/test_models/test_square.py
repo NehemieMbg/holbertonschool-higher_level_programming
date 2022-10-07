@@ -73,4 +73,8 @@ class TestSquare(unittest.TestCase):
         with self.assertRaises(ValueError):
             Square(5, -10, 8)
 
+    def test_y_negative(self):
+        with self.assertRaises(ValueError):
+            Square(5, 10, -8)
+
 
