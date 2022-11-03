@@ -1,3 +1,3 @@
 -- Display the number of records
-SELECT *
-FROM first_table.id;
+SELECT id
+FROM first_table
