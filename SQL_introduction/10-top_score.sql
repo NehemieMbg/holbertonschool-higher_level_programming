@@ -1,4 +1,4 @@
 -- Lists all records of the table
-SELECT *
+SELECT
 FROM second_table
 ORDER BY score, name;
