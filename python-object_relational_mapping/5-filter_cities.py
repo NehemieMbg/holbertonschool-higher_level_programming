@@ -16,7 +16,6 @@ if __name__ == "__main__":
         )
     query_rows = cur.fetchall()
     display = (', '.join(row[0] for row in rows))
-    for row in query_rows:
-        print(row)
+    print(str(display))
     cur.close()
     db.close()
