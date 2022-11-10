@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Takes in an argument and displays all values in the states
+Takes in an argument and displays all the values in the states
 """
 from sys import argv
 import MySQLdb
