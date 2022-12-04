@@ -1,4 +1,4 @@
 #!/usr/bin/node
 'use strict';
 
-console.log(process.argv[2]);
+process.argv.length > 1 ? console.log(process.argv[2]) : console.log('No argument');
