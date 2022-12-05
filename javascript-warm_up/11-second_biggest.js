@@ -6,4 +6,5 @@ for (let i = 2; i < process.argv.length; i++) {
   arr.push(Number(process.argv[i]));
 }
 
-console.log(Math.max(...arr) - 1);
+if (arr.length > 0) console.log(Math.max(...arr) - 1);
+else console.log(0);
