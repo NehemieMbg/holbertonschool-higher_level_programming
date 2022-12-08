@@ -1,4 +1,4 @@
 #!/usr/bin/node
-"use strict";
+'use strict';
 
 module.exports = class Rectangle {};
