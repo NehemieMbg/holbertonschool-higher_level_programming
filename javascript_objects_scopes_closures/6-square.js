@@ -8,9 +8,12 @@ module.exports = class Square extends OldSquare {
   }
 
   charPrint (c) {
-    const letter = !c ? 'X' : 'C';
-    for (let i = 0; i < this.width; i++) {
-      console.log(letter.repeat(this.width));
+    if (c === undefined) {
+      this.print();
+    } else {
+      for (let i = 0; i < this.width; i++) {
+        console.log(c.repeat(this.width));
+      }
     }
   }
 };
