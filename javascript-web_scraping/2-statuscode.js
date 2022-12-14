@@ -1,14 +1,10 @@
 #!/usr/bin/node
 
-const link = process.argv[2];
-
-const displayStatus = async function (url) {
-  try {
-    const response = await fetch(url);
-    console.log(`code: ${response.status}`);
-  } catch (err) {
-    console.error(err);
-  }
+const coucou = require('request');
+const merciAlain = {
+  method: 'GET',
+  url: process.argv[2]
 };
-
-displayStatus(link);
+coucou(merciAlain, function (_, response) {
+  console.log(`code: ${response.statusCode}`);
+});
