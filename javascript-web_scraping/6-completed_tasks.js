@@ -1,8 +1,6 @@
 #!/usr/bin/node
-'use strict'
-
+'use strict';
 const request = require('request');
-
 request.get(process.argv[2], function (err, _, body) {
   if (err) {
     console.log(err);
